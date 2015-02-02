@@ -1,0 +1,13 @@
+<h1><%= @contact.name() %></h1>
+
+<h3>Add Your Numbers Below</h3>
+
+<form action="/numbers" method="post">
+  <input id='contact_id' name='contact_id' type='hidden' value='<%= @contact.id() %>'>
+  <input id='home' name='home' type='text' placeholder='Home'><br><br>
+  <input id='mobile' name='mobile' type='text' placeholder='Mobile'><br><br>
+  <input id='work' name='work' type='text' placeholder='Work'><br><br>
+  <button type="submit">Getcha Numbers!</button><br><br>
+</form>
+
+<a href="/">Return to Directory</a>
