@@ -14,9 +14,7 @@ get('/') do
 end
 
 post('/contacts') do
-  name = params.fetch('contact')
-  contact = Contact.new(name)
-  contact.add_contact()
+  contact = Contact.create({ :name => params['contact']} )
   @contacts = Contact.all()
   erb(:index)
 end
