@@ -1,7 +1,6 @@
 ENV['RACK_ENV'] = 'test'
 
-require("rspec")
-require("pg")
-require("sinatra/activerecord")
-require("contact")
-require("phone")
+require("bundler/setup")
+Bundler.require(:default, :test)
+
+Dir[File.dirname(__FILE__) + '/../lib/*.rb'].each { |file| require file }

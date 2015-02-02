@@ -1,9 +1,7 @@
-require("sinatra")
-require("sinatra/reloader")
-also_reload("lib/**/*.rb")
-require("./lib/phone.rb")
-require("./lib/contact.rb")
-require("pry")
+require("bundler/setup")
+Bundler.require(:default)
+
+Dir[File.dirname(__FILE__) + '/lib/*.rb'].each { |file| require file }
 
 configure :development do 
   set :bind, '0.0.0.0'
