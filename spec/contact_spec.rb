@@ -1,6 +1,4 @@
-require('rspec')
-require('pry')
-require('contact')
+require('spec_buddy')
 
 describe(Contact) do
   before() do

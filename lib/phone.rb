@@ -1,6 +1,7 @@
-class Phone
+class Phone 
   attr_reader(:number)
-
+  @@all_numbers = []
+  
   define_method(:initialize) do |number|
     @number = number
     @id = id

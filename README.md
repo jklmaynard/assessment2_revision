@@ -9,6 +9,10 @@ The biggest bug is the inability to delete phone numbers once they are submitted
 
 For flying solo for this project, I'm surprised at what I was able to accomplish.  This second week was not very successful, because we managed to go at the exercises without having to define too many classes, or spent so much of the class define creating classes and methods for those classes that we didn't have enough time implementing Sinatra.  It was good to see how far I could get in the time allotted.
 
+#Notes for Myself
+
+1. There needs to be more spec coverage for phone/contacts, however I'm going to update this into psql active record, so a lot of the spec coverage and methods will be removed.  This will be a dramatic change from the original assessment.
+
 License to Reel
 
 Copyright 2015, James Maynard
