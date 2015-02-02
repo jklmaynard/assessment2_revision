@@ -1,5 +1,4 @@
 class Contact
-  @@phone_book = []
   attr_reader(:name)
 
   define_method(:initialize) do |name|

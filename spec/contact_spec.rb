@@ -1,7 +1,6 @@
 require('rspec')
 require('pry')
-require('contact_class')
-require('phone_class')
+require('contact')
 
 describe(Contact) do
   before() do

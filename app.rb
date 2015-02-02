@@ -1,10 +1,14 @@
 require("sinatra")
 require("sinatra/reloader")
 also_reload("lib/**/*.rb")
-require("./lib/phone_class.rb")
-require("./lib/contact_class.rb")
+require("./lib/phone.rb")
+require("./lib/contact.rb")
 require("pry")
 
+configure :development do 
+  set :bind, '0.0.0.0'
+  set :port, 3000
+end
 
 get('/') do
   @contacts = Contact.all()
